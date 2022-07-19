@@ -12,10 +12,7 @@ class Dropcascading extends Component
 	public $selectedContinent=0;
 	public function changeContinent()
 	{
-		if($this->selectedContinent != '-1'){
-			
-			$this->countries=Countries::where('cid',$this->selectedContinent)->get();
-		}
+		//$this->countries=Countries::find($this->selectedContinent);
 	}
 	public function mount()
 	{
